@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f9fafb;
+    font-family: 'Inconsolata', monospace;
+      
+  
+    background-image: 
+    url("assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg"), 
+    url("assets/images/pattern-circle.svg"),                              
+    url("assets/images/pattern-lines.svg"),                              
+    url("assets/images/pattern-squiggly-line-top.svg"),                   
+    url("assets/images/background-mobile.png");                           
+
+  background-position: 
+    bottom left,         
+    center,        
+    top,       
+    top right,      
+    center;          
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+  background-size: 
+    100% 200px,     
+    100px,           
+    600px,           
+    100% 100px,     
+    cover;         
+  }
+  .main-name img {
+    height: 25px; 
+  }
+  .namel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-top: 25px;
+    margin-bottom: 30px;
+  }
+  .ticket-form h1{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 25px;
+  }
+  .ticket-form{
+    max-width: 500px;
+    margin-inline: auto;
+  }
+  .ticket-form p{
+    color: hsl(252, 6%, 83%);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .ticket-form label{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+  .tinput{
+    width: 90%;
+    max-width: 500px;
+    height: 40px;
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 1px solid hsl(245, 15%, 58%);
+    background-color: hsl(245, 19%, 35%,0.3);
+    padding: 10px;
+    outline: none;
+    color: hsl(0, 0%, 100%);
+  }
+  .details-form{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .details-form label{
+    text-align: left !important;
+    display: block;
+    padding-left: 5%;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .file-input{
+    width: 100%;
+    max-width: 500px;
+    height: 75px;
+    border-radius: 10px;
+    border: 2px dotted hsl(245, 15%, 58%);
+    background-color: hsl(245, 19%, 35%,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    position: relative;
+  }
+  .file-inputbox{
+   opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  }
+  .file-input img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    margin-bottom: 0;
+  }
+  .inlabel{
+    width: 90%;
+  }
+  .inlabel p{
+    font-size: 10px;
+  }
+  .genbtn{
+    width: 90%;
+    max-width: 500px;
+    margin-inline: auto;
+    background-color: hsl(7, 88%, 67%);
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 40px;
+    color: hsl(248, 70%, 10%);
+    border: 1px solid hsl(7, 88%, 67%);
+    border-radius: 10px;
+  }
+  .ticket-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    margin-inline: auto;
+    width: 90%;
+  }
+  .ticket-page h1{
+     color: hsl(0, 0%, 100%);
+     text-align: center;
+     font-size: 25px;
+  }
+  .ticket-page h1 span{
+    background: linear-gradient(to right ,hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ .shortmess{
+    color: hsl(252, 6%, 83%);
+    text-align: center;
+    font-size: 15px;
+ }
+
+ /*the ticket page*/
+ .ticket-page p span{
+    color: hsl(7, 71%, 60%);
+    text-align: center;
+    font-size: 15px;
+ }
+
+ /*the ticket card*/
+ .ticket-card{
+     width: 90%;
+     max-width: 500px;
+     margin: 30px auto 0 auto;
+     background-image: url("assets/images/pattern-ticket.svg");
+     background-size: contain;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+     padding-top: 5px;
+ }
+ .logo-tick img{
+    height: 10px;
+    margin: 10px;
+    margin-bottom: 0;
+ }
+ .logo-tick p{
+    margin-left: 10px;
+    font-size: 10px;
+    color: hsl(245, 15%, 58%);
+    margin-top: 0;
+ }
+ 
+ 
+ .customer img{
+  height: 27px;
+  width: 27px;
+  border-radius: 4px;
+  
+ }
+ .customer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+ }
+ .customer div p{
+    font-size: 12px;
+    margin-top: 0.1rem;
+    color: hsl(245, 15%, 58%);
+   }
+ .git-img img{
+    height: 15px;
+    width: 15px;
+    display:inline-flex;
+   }
+   .customer div h4{
+    margin-bottom: 0;
+    color: hsl(252, 6%, 83%);
+    font-size: 10px;
+   }
+   .ticket-number{
+    writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    position: absolute;
+    font-size: 11px !important;
+    top: 1rem;
+    right: 0;
+    height: 100%;
+    color: hsl(246, 17%, 89%);
+   }
+   @media (min-width: 300px) {
+    .ticket-form h1{
+        font-size: 30px;
+    }
+    .ticket-card{
+      width: 230px;
+    }
+
+     body{
+        background-image: 
+    url("assets/images/pattern-squiggly-line-bottom-desktop.svg"), 
+    url("assets/images/pattern-circle.svg"),                              
+    url("assets/images/pattern-lines.svg"),                              
+    url("assets/images/pattern-squiggly-line-top.svg"),                   
+    url("assets/images/background-desktop.png");                           
+
+  background-position: 
+    bottom left,         
+    center,        
+    top,       
+    top right,      
+    center;          
+
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+
+  background-size: 
+    100% 200px,     
+    100px,           
+    600px,           
+    100% 100px,     
+    cover;         
+     }
+     .ticket-page h1{
+        font-size: 35px;
+     }
+     .shortmess{
+        font-size: 25px;
+     }
+     .customer div h4{
+      font-size: 13px;
+     }
+   }
+
+   @media (min-width: 450px) {
+    .ticket-form h1{
+        font-size: 35px;
+    }
+    
+   }
+
+   @media (min-width: 1024px) {
+    .ticket-form h1{
+        font-size: 40px;
+       
+    }
+    .ticket-form p{
+        font-size: 20px;
+    }
+    .tinput{
+        height: 50px;
+    }
+    .file-input{
+        height: 95px;
+    }
+    .inlabel p{
+        font-size: 10px;
+    }
+   }

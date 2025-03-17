@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Ticket Generator</title>
+    <link rel="stylesheet" href="ticketgen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="main-body">
+
+       <div class="namel">
+         <span class="main-name">
+          <img src="assets/images/logo-full.svg" alt="logo-full">
+        </span>
+     </div>
+
+<div id="pone" class="ticket-form" >
+    <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+    <p>Secure your spot at the year's biggest coding conference</p>
+   <form id="form" class="details-form" action="">
+
+    <label class="inlabel" for="fileUpload">Upload Avatar
+        <div  class="file-input" >
+       <img  src="assets/images/icon-upload.svg" alt="">
+     <input id="fileUpload" class="file-inputbox" type="file" required>
+        </div>
+    </label>
+
+    
+
+    <label for="fName">Full Name</label>
+    <input id="fName" class="tinput" type="text" required>
+    <label for="mail">Email Address</label>
+    <input id="mail" class="tinput" type="email" placeholder="example@email.com" required>
+    <label for="gitt">Github Username</label>
+    <input id="gitt" class="tinput" type="text" placeholder="@yourusername" minlength="4" maxlength="12" required>
+    <button class="genbtn" type="submit">Generate My Ticket</button>
+    </form>
+</div>
+
+<div id="ptwo" class="ticket-page" style="display: none;">
+<h1>Congrats, <span id="eName">Gifton Otieno!</span> Your ticket is ready.</h1>
+<p class="shortmess">We've emailed your ticket to <span id="enmail">otienogift@gmail.com</span> and we'll send updates in the run up to the event.</p>
+
+<br>
+
+    <div class="ticket-card">
+        <div class="logo-tick">
+       
+            <img src="assets/images/logo-full.svg" alt="logo-full">
+            <p><small id="dtime">jun 21, 2025 / Nairobi,kenya</small></p>
+       
+        
+        </div>
+         <p id="uniqnum" class="ticket-number">
+            #G78FHG
+           </p> 
+    
+        <div class="customer">
+            <span id="uimage" ><img  src="assets/images/image-avatar.jpg" alt=""></span>
+            
+            <div>
+                <h4 id="cname">Gifton Otieno</h4>
+                <p><span class="git-img"><img src="assets/images/icon-github.svg " alt="" srcset=""></span><small id="uname">@giftonotieno001</small></p>
+            </div>
+            </div>
+
+    
+</div>
+
+</div>
+
+</div>
+
+<script src="ticketgen.js"></script>    
+</body>
+</html>
